@@ -1,0 +1,81 @@
+body {
+          width:750px;
+          margin:0 auto 0 auto;
+      }
+
+      #tar{
+          float:right;
+          }
+      #tal{
+          float:left;
+          }
+      #space-table{
+          padding:3px 3px 3px 3px;
+      }
+      #navMenu {
+          margin:0;
+          padding:0;
+          list-style:none;
+          font-family:arial;
+          text-align:center;
+          line-height:60px;
+      }
+      #navMenu li {
+              float:left;
+              background:url(/images/default.jpg) no-repeat center center;	/* default background image	*/
+              width:100px;							/* width and height of the menu item */
+              height:58px;
+              /*border-left:1px solid #111;				/* simulate pixel perfect using border */
+              /*border-right:1px solid #333;
+              /*border-top:1px solid #555;
+              border-bottom:1px solid #333;*/
+              position:relative;			/* must set it as relative, because .hover class top and left with absolute position will be positioned according to li.	*/
+      }
+      #navMenu li a {
+              z-index:20;		/* z-index must be higher than .hover class */
+              display:block;	/* display as block and set the height according to the height of the menu to make the whole LI clickable	*/
+              height:58px;
+              position:relative;
+              color:#777;
+      }
+      #navMenu li .hover {
+              background:url(/images/over.jpg) no-repeat center center;		/* mouseover image	*/
+              position:absolute;	/* must be postion absolute 	*/
+              width:100px;	/*	width, height, left and top to fill the whole LI item	*/
+              height:58px;
+              left:0;
+              top:0;
+              z-index:0;		/* display under the Anchor tag	*/
+              display:none;	/* hide it by default	*/
+      }
+      #navMenu li.selected {
+              background:url(/images/selected.jpg) no-repeat center center;	/* selected image	*/
+      }
+      #stable{
+          border-collapse:collapse;
+      }
+
+      .myBox
+      {
+          margin: 0 auto;
+          color: #ffffff;
+          width: 749px;
+          height: 200px;
+          padding: 4px;
+          text-align: left;
+          /*background-image: url(crosshatch.jpg);
+          background-repeat: no-repeat;*/
+          border:1px solid #e7e7e7;
+      }
+      .myBox2
+      {
+          margin: 0 auto;
+          color: #ffffff;
+          width: 749px;
+          height: 60px;
+          padding: 4px;
+          text-align: left;
+          /*background-image: url(crosshatch.jpg);
+          background-repeat: no-repeat;*/
+          border:1px solid #e7e7e7;
+      }

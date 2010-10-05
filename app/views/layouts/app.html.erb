@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fleetservice</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+  <script type="text/javascript" src="/script/jquery-1.4.2.js"></script>
+  <script type="text/javascript" src="/script/jquery.curvycorners.source.js"></script>
+
+
+  <style type="text/css">
+      body {
+          width:750px;
+          margin:0 auto 0 auto;
+      }
+
+      #tar{
+          float:right;
+          }
+      #tal{
+          float:left;
+          }
+      #space-table{
+          padding:3px 3px 3px 3px;
+      }
+      #navMenu {
+          margin:0;
+          padding:0;
+          list-style:none;
+          font-family:arial;
+          text-align:center;
+          line-height:60px;
+      }
+      #navMenu li {
+              float:left;
+              background:url(/images/default.jpg) no-repeat center center;	/* default background image	*/
+              width:100px;							/* width and height of the menu item */
+              height:58px;
+              /*border-left:1px solid #111;				/* simulate pixel perfect using border */
+              /*border-right:1px solid #333;
+              /*border-top:1px solid #555;
+              border-bottom:1px solid #333;*/
+              position:relative;			/* must set it as relative, because .hover class top and left with absolute position will be positioned according to li.	*/
+      }
+      #navMenu li a {
+              z-index:20;		/* z-index must be higher than .hover class */
+              display:block;	/* display as block and set the height according to the height of the menu to make the whole LI clickable	*/
+              height:58px;
+              position:relative;
+              color:#777;
+      }
+      #navMenu li .hover {
+              background:url(/images/over.jpg) no-repeat center center;		/* mouseover image	*/
+              position:absolute;	/* must be postion absolute 	*/
+              width:100px;	/*	width, height, left and top to fill the whole LI item	*/
+              height:58px;
+              left:0;
+              top:0;
+              z-index:0;		/* display under the Anchor tag	*/
+              display:none;	/* hide it by default	*/
+      }
+      #navMenu li.selected {
+              background:url(/images/selected.jpg) no-repeat center center;	/* selected image	*/
+      }
+      #stable{
+          border-collapse:collapse;
+      }
+
+      .myBox
+      {
+          margin: 0 auto;
+          color: #ffffff;
+          width: 749px;
+          height: 200px;
+          padding: 4px;
+          text-align: left;
+          /*background-image: url(crosshatch.jpg);
+          background-repeat: no-repeat;*/
+          border:1px solid #e7e7e7;
+      }
+      .myBox2
+      {
+          margin: 0 auto;
+          color: #ffffff;
+          width: 749px;
+          height: 60px;
+          padding: 4px;
+          text-align: left;
+          /*background-image: url(crosshatch.jpg);
+          background-repeat: no-repeat;*/
+          border:1px solid #e7e7e7;
+      }
+
+  </style>
+
+
+  <script type="text/javascript">
+
+$(document).ready(function () {
+
+	//Append a div with hover class to all the LI
+	$('#navMenu li').append('<div class="hover"><\/div>');
+
+
+	$('#navMenu li').hover(
+
+		//Mouseover, fadeIn the hidden hover class
+		function() {
+
+			$(this).children('div').fadeIn('1000');
+
+		},
+
+		//Mouseout, fadeOut the hover class
+		function() {
+
+			$(this).children('div').fadeOut('1000');
+
+	}).click (function () {
+
+		//Add selected class if user clicked on it
+		$(this).addClass('selected');
+
+	});
+
+});
+
+////////////////////////rounded rectangle///////////////////////////////
+$(function(){
+
+  settings = {
+          tl: { radius: 15 },
+          tr: { radius: 15 },
+          bl: { radius: 15 },
+          br: { radius: 15 },
+          antiAlias: true,
+          autoPad: true,
+          validTags: ["div"]
+      }
+
+  $('.myBox').corner(settings);
+  $('.myBox2').corner(settings);
+
+  });;
+////////////////////////rounded rectangle////////////////////////////////
+
+</script>
+</head>
+<body>
+  <table align="center" border="1px" width="750px" height="100%" cellpadding="3px" bordercolor="#e7e7e7">
+
+<tr>
+  <td>
+    <div align="center">
+    <div class="myBox">
+      <img src="images/fleetservice.jpg"/>
+    </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <div>
+    <div class="myBox2">
+        <table cellpadding="0px" cellspacing="0px" width="100%" border="0px">
+          <tr >
+            <td>
+            <div id="tar">
+              <img src="images/left.png"/>
+            </div>
+            </td>
+            <td width="400px">
+                  <ul id="navMenu">
+
+                        <li><a href="#"><img src="images/metiers.png"/></a></li>
+                        <li><a href="#"><img src="images/offres.png"/></a></li>
+                        <li><a href="#"><img src="images/contacts.png"/></a></li>
+                        <li><a href="#"><img src="images/acces.png"/></a></li>
+
+                  </ul>
+            </td>
+            <td>
+              <img src="images/right.png"/>
+            </td>
+          </tr>
+        </table>
+    </div>
+    </div>
+ </td>
+</tr>
+<tr>
+  <td>
+    <div id="stable">
+
+      <%= yield %>
+
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <hr align="center" width="80%" color="#e7e7e7" size="2">
+  </td>
+</tr>
+<tr>
+  <td width="736px" height="44px" align="center">
+    <img src="images/footer.png"/>
+  </td>
+</tr>
+
+</table>
+
+</body>
+</html>

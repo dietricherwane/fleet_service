@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fleetservice</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag '/scripts/jquery-1.4.2.js' %>
+  <%= javascript_include_tag '/scripts/jquery.curvycorners.source.js' %>
+  <%= csrf_meta_tag %>
+  
+  <link type="text/css" href="/stylesheets/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="/script/jquery-1.4.2.js"></script>
+  <script type="text/javascript" src="/script/jquery.curvycorners.source.js"></script>
+
+  <script type="text/javascript">
+
+$(document).ready(function () {
+    
+    ////////////////////////rounded rectangle///////////////////////////////
+$(function(){
+
+  settings = {
+          tl: { radius: 15 },
+          tr: { radius: 15 },
+          bl: { radius: 15 },
+          br: { radius: 15 },
+          antiAlias: true,
+          autoPad: true,
+          validTags: ["div"]
+      }
+
+  $('.myBox').corner(settings);
+  $('.myBox2').corner(settings);
+
+  });;
+////////////////////////rounded rectangle////////////////////////////////
+
+});
+
+
+
+</script>
+</head>
+<body>
+  <table align="center" border="1px" width="750px" height="100%" cellpadding="3px" bordercolor="#e7e7e7">
+
+<tr>
+  <td>
+    <div align="center">
+    <div class="myBox">
+      <img src="/images/fleetservice.jpg"/>
+    </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <div>
+    <div class="myBox2">
+        <table cellpadding="0px" cellspacing="0px" width="100%" border="0px">
+          <tr >
+            <td>
+            <div id="tar">
+              <img src="/images/left.png"/>
+            </div>
+            </td>
+            <td width="400px">
+                  <ul id="navMenu">
+
+                        <li><a href="#"><img src="/images/metiers.png"/></a></li>
+                        <li><a href="#"><img src="/images/offres.png"/></a></li>
+                        <li><a href="#"><img src="/images/contacts.png"/></a></li>
+                        <li><a href="#"><img src="/images/acces.png"/></a></li>
+
+                  </ul>
+            </td>
+            <td>
+              <img src="/images/right.png"/>
+            </td>
+          </tr>
+        </table>
+    </div>
+    </div>
+ </td>
+</tr>
+<tr>
+  <td>
+    <div id="stable">
+
+      <%= yield %>
+
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <hr align="center" width="80%" color="#e7e7e7" size="2">
+  </td>
+</tr>
+<tr>
+  <td width="736px" height="44px" align="center">
+    <img src="/images/footer.png"/>
+  </td>
+</tr>
+
+</table>
+
+</body>
+</html>
