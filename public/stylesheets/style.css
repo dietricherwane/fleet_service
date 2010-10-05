@@ -4,10 +4,16 @@ body {
       }
 
       #tar{
-          float:right;
+          /*float:right; */
+          padding-top:5px;
+          padding-right:0px;
           }
+      #spaceheader{
+          padding-top:0px;
+      }
       #tal{
-          float:left;
+          padding-top:5px;
+          padding-left:0px;
           }
       #space-table{
           padding:3px 3px 3px 3px;
