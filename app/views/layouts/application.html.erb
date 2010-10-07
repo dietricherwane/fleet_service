@@ -59,7 +59,17 @@ $(function(){
 
   $('.myBox').corner(settings);
   $('.myBox2').corner(settings);
-
+  $('.myBox3').corner(settings);
+  $('.myBox4').corner(settings);
+  $('.myBox5').corner(settings);
+  $('.myBox6').corner(settings);
+  $('.myBox7').corner(settings);
+  $('.myBox8').corner(settings);
+  $('.myBox9').corner(settings);
+  $('.myBox10').corner(settings);
+  $('.myBox11').corner(settings);
+  $('.myBox12').corner(settings);
+  $('.myBox13').corner(settings);
   });;
 ////////////////////////rounded rectangle////////////////////////////////
 
@@ -95,10 +105,10 @@ $(function(){
             <td width="400px">
                   <ul id="navMenu">
 
-                        <li><a href="#"><img src="/images/metiers.png"/></a></li>
-                        <li><a href="#"><img src="/images/offres.png"/></a></li>
-                        <li><a href="#"><img src="/images/contacts.png"/></a></li>
-                        <li><a href="#"><img src="/images/acces.png"/></a></li>
+                        <li><%= link_to image_tag("/images/metiers.png"), "/home/index" %></li>
+                        <li><%= link_to image_tag("/images/offres.png"), "/offre/index" %></li>
+                        <li><%= link_to image_tag("/images/contacts.png"), "#" %></li>
+                        <li><%= link_to image_tag("/images/acces.png"), "http://www.0-one.net", :target => '_blank' %></li>
 
                   </ul>
             </td>

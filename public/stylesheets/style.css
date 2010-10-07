@@ -15,73 +15,233 @@ body {
           padding-top:5px;
           padding-left:0px;
           }
-      #space-table{
-          padding:3px 3px 3px 3px;
-      }
-      #navMenu {
-          margin:0;
-          padding:0;
-          list-style:none;
-          font-family:arial;
-          text-align:center;
-          line-height:60px;
-      }
-      #navMenu li {
-              float:left;
-              background:url(/images/default.jpg) no-repeat center center;	/* default background image	*/
-              width:100px;							/* width and height of the menu item */
-              height:58px;
-              /*border-left:1px solid #111;				/* simulate pixel perfect using border */
-              /*border-right:1px solid #333;
-              /*border-top:1px solid #555;
-              border-bottom:1px solid #333;*/
-              position:relative;			/* must set it as relative, because .hover class top and left with absolute position will be positioned according to li.	*/
-      }
-      #navMenu li a {
-              z-index:20;		/* z-index must be higher than .hover class */
-              display:block;	/* display as block and set the height according to the height of the menu to make the whole LI clickable	*/
-              height:58px;
-              position:relative;
-              color:#777;
-      }
-      #navMenu li .hover {
-              background:url(/images/over.jpg) no-repeat center center;		/* mouseover image	*/
-              position:absolute;	/* must be postion absolute 	*/
-              width:100px;	/*	width, height, left and top to fill the whole LI item	*/
-              height:58px;
-              left:0;
-              top:0;
-              z-index:0;		/* display under the Anchor tag	*/
-              display:none;	/* hide it by default	*/
-      }
-      #navMenu li.selected {
-              background:url(/images/selected.jpg) no-repeat center center;	/* selected image	*/
-      }
-      #stable{
-          border-collapse:collapse;
-      }
+#space-table{
+	padding:3px 3px 3px 3px;
+}
+#navMenu {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family:arial;
+	text-align:center;
+	line-height:60px;
+}
+#navMenu li {
+		float:left;
+		background:url(../images/default.jpg) no-repeat center center;	/* default background image	*/
+		width:100px;							/* width and height of the menu item */
+		height:58px;
+		/*border-left:1px solid #111;				/* simulate pixel perfect using border */
+		/*border-right:1px solid #333;
+		/*border-top:1px solid #555;
+		border-bottom:1px solid #333;*/
+		position:relative;			/* must set it as relative, because .hover class top and left with absolute position will be positioned according to li.	*/
+}
+#navMenu li a {
+		z-index:20;		/* z-index must be higher than .hover class */
+		display:block;	/* display as block and set the height according to the height of the menu to make the whole LI clickable	*/
+		height:58px;
+		position:relative;
+		color:#777;
+}
+#navMenu li .hover {
+		background:url(../images/over.jpg) no-repeat center center;		/* mouseover image	*/
+		position:absolute;	/* must be postion absolute 	*/
+		width:100px;	/*	width, height, left and top to fill the whole LI item	*/
+		height:58px;
+		left:0;
+		top:0;
+		z-index:0;		/* display under the Anchor tag	*/
+		display:none;	/* hide it by default	*/
+}
+#navMenu li.selected {
+		background:url(../images/selected.jpg) no-repeat center center;	/* selected image	*/
+}
+#stable{
+	border-collapse:collapse;
+}
 
-      .myBox
-      {
-          margin: 0 auto;
-          color: #ffffff;
-          width: 749px;
-          height: 200px;
-          padding: 4px;
-          text-align: left;
-          /*background-image: url(crosshatch.jpg);
-          background-repeat: no-repeat;*/
-          border:1px solid #e7e7e7;
-      }
-      .myBox2
-      {
-          margin: 0 auto;
-          color: #ffffff;
-          width: 749px;
-          height: 60px;
-          padding: 4px;
-          text-align: left;
-          /*background-image: url(crosshatch.jpg);
-          background-repeat: no-repeat;*/
-          border:1px solid #e7e7e7;
-      }
+.myBox
+{
+    margin: 0 auto;
+    color: #ffffff;
+    width: 749px;
+    height: 200px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox2
+{
+    margin: 0 auto;
+    color: #ffffff;
+    width: 749px;
+    height: 60px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox3
+{
+    margin: 0 auto;
+    color: #ffffff;
+    width: 82px;
+    height: 82px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox4
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 420px;
+    height: 150px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox5
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 420px;
+    height: 115px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox6
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 298px;
+    height: 100px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox7
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 298px;
+    height: 185px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox8
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 300px;
+    height: 145px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox9
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 298px;
+    height: 100px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox10
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 298px;
+    height: 125px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox11
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 298px;
+    height: 275px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox12
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 340px;
+    height: 180px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+.myBox13
+{
+    margin: 0 auto;
+    /*color: #ffffff;*/
+    width: 340px;
+    height: 220px;
+    padding: 4px;
+    text-align: left;
+    /*background-image: url(crosshatch.jpg);
+    background-repeat: no-repeat;*/
+    border:1px solid #e7e7e7;
+}
+#texte-contenu{
+	font-family:Verdana;
+	font-size:12px;
+	}
+#texte-contenu1{
+	font-family:Verdana;
+	font-size:11px;
+	}
+#titre{
+	font-family:Verdana;
+	color:#b11c1c;
+	text-shadow:0px 0px 0px black;
+}
+#couleur-liste{
+	color:#7d6192;
+	}
+#align-tab{
+	font-family:Verdana;
+	color:#b11c1c;
+	float:right;
+	font-weight:bold;
+}
+#retour{
+    font-family:Verdana;
+    color:#7d6192;
+    font-weight:bold;
+    float:right;
+}
