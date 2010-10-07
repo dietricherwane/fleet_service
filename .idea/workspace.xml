@@ -3,10 +3,7 @@
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="1ea4e61b-60a3-4de1-a7ee-810705685042" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/offre/index.html.erb" afterPath="$PROJECT_DIR$/app/views/offre/index.html.erb" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="fleetservice.iws" />
@@ -33,16 +30,16 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="28" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-9.5">
+            <state line="110" column="28" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="16" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.46721312">
+            <state line="63" column="16" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,16 +57,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/produits/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="22" selection-start="581" selection-end="713" vertical-scroll-proportion="-3.409091">
+            <state line="14" column="22" selection-start="581" selection-end="713" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/offre/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="274" selection-end="274" vertical-scroll-proportion="-6.1363635">
+            <state line="57" column="46" selection-start="2745" selection-end="2745" vertical-scroll-proportion="0.6976744">
               <folding />
             </state>
           </provider>
@@ -93,10 +90,10 @@
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app/views/produits/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/gps/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/offre/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/securite/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tracking/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/offre/index.html.erb" />
       </list>
     </option>
   </component>
@@ -126,6 +123,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -414,9 +413,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -602,12 +599,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="800" height="550" extended-state="0" />
+    <frame x="0" y="25" width="800" height="550" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24281985" sideWeight="0.6549296" order="0" side_tool="false" content_ui="tabs" />
@@ -617,6 +613,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -665,9 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/app.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="5" selection-start="3094" selection-end="3547" vertical-scroll-proportion="0.04360465">
-          <folding />
-        </state>
+        <state line="101" column="5" selection-start="3094" selection-end="3547" vertical-scroll-proportion="0.04360465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/images/glg.jpg">
@@ -677,77 +672,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/produits_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tracking_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="87" selection-start="1063" selection-end="1130" vertical-scroll-proportion="-9.136364" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tracking/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="691" selection-end="691" vertical-scroll-proportion="0.78220856" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/securite/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="691" selection-end="691" vertical-scroll-proportion="0.74233127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/gps/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="693" selection-end="693" vertical-scroll-proportion="0.5959302" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="28" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="16" selection-start="5327" selection-end="5327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="87" selection-start="1063" selection-end="1130" vertical-scroll-proportion="-9.136364">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/offre/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="274" selection-end="274" vertical-scroll-proportion="-6.1363635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tracking/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="691" selection-end="691" vertical-scroll-proportion="0.78220856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/securite/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="691" selection-end="691" vertical-scroll-proportion="0.74233127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="28" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-9.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/gps/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="693" selection-end="693" vertical-scroll-proportion="0.5959302">
-          <folding />
-        </state>
+        <state line="245" column="16" selection-start="5327" selection-end="5327" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/produits/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="581" selection-end="713" vertical-scroll-proportion="-3.409091">
+        <state line="14" column="22" selection-start="581" selection-end="713" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="16" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.46721312">
+        <state line="63" column="16" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/offre/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="46" selection-start="2745" selection-end="2745" vertical-scroll-proportion="0.6976744">
           <folding />
         </state>
       </provider>
